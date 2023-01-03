@@ -1,0 +1,4321 @@
+/* ==================================================
+            common css start
+===================================================== */
+* {
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffff;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.main {
+    display: flex;
+}
+
+/* ==================================================
+            common css  end
+===================================================== */
+
+/* ==================================================
+                header part start
+===================================================== */
+#header-part {
+    width: 80%;
+    height: 45px;
+    background: #F4F1EA;
+    margin: 0 auto;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+
+}
+
+#header-part .left .text h6 {
+    line-height: 45px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(10, 48, 58);
+}
+
+#header-part .left .text i {
+    margin: 0px 5px;
+}
+
+#header-part .right .text h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 45px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(10, 48, 58);
+    text-align: right;
+}
+
+#header-part .right .text i {
+    margin: 0 6px;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(10, 48, 58);
+}
+
+
+/* ==================================================
+                header part end
+===================================================== */
+
+/* =================================================
+                navbar part start 
+==================================================== */
+#navbar-part {
+    width: 100%;
+    height: 100px;
+    background: #fff;
+
+
+}
+
+#navbar-part ul li {
+    margin: 0 10px;
+    position: relative;
+
+
+
+}
+
+#navbar-part ul li a {
+    display: inline-block;
+    color: #1e4b57;
+    background: transparent;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    clip-path: polygon(0 0, 100% 0, 96% 100%, 4% 98%);
+    transition: .4s;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: capitalize;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px 15px;
+    transition: .4s;
+
+
+
+}
+
+#navbar-part ul li a:hover {
+    color: #fff ;
+    background: #F04336;
+} 
+
+
+
+
+
+/* ================================================= dropdown css start ================================ */
+
+#navbar-part ul .dropdown {
+    background: #fff;
+    position: absolute;
+    top: 61px;
+    left: -56px;
+    width: 204px;
+    border: 1px solid #CECDCD;
+    transform: rotateX(90deg); 
+     opacity: 0; 
+    transition: .4s;
+    z-index: 9999;
+}
+
+ #navbar-part ul li:hover .dropdown{
+    transform: rotateX(0deg);
+    opacity: 1;
+} 
+
+#navbar-part ul .dropdown ul li{
+    margin: 10px 0;
+}
+
+#navbar-part ul .dropdown ul li a{
+    display: block;
+    padding: 0 40px;
+    background: transparent;
+    transition: .4s;
+    position: relative;
+    left: 0;
+    top: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: #0A303A;
+    
+}
+
+#navbar-part ul .dropdown ul li a::after {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 0px;
+    height: 3px;
+    background: #F04336;
+    content: '';
+    border-radius: -1px;
+    transition: .4s;
+}
+
+#navbar-part ul .dropdown ul li a:hover{
+    color: #F04336;
+}
+
+#navbar-part ul .dropdown ul li a:hover::after{
+    width: 40px;
+}
+
+/* ================================================= dropdown css end  ================================ */
+
+
+
+#navbar-part .right {
+    width: 20%;
+    height: 100%;
+    position: relative;
+    margin-left: 5px;
+}
+
+#navbar-part .right .icon {
+    margin-left: 10px;
+}
+
+#navbar-part .right .icon .search {
+    background: transparent;
+    border: 0;
+}
+
+#navbar-part .right::after {
+    width: 1px;
+    height: 40px;
+    background: #edece6;
+    top: -11px;
+    left: 0;
+    position: absolute;
+    content: '';
+}
+
+#navbar-part .right i {
+    margin: 0 10px;
+    font-size: 20px;
+    color: rgb(10, 48, 58);
+}
+
+
+#navbar-part .btn {
+    padding: 12px 20px;
+    width: 140px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #F04336;
+    outline: none;
+    margin-top: 20px;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: 2;
+    border: 0;
+    position: absolute;
+    top: -13px;
+    right: 314px;
+}
+
+#navbar-part .btn:hover {
+    color: #fff;
+
+}
+
+#navbar-part .btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #0A303A;
+    z-index: -1;
+    border-radius: 50% 50% 0 0;
+    transition: all 0.5s;
+
+}
+
+#navbar-part .btn:hover::before {
+    height: 190%;
+}
+
+
+#navbar-part .offcanvas-top {
+
+    --bs-offcanvas-height: 100vh;
+    opacity: .95;
+
+}
+
+#navbar-part .box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#navbar-part .box h1 {
+    color: rgb(10, 48, 58);
+    font-family: 'Poppins', sans-serif;
+    font-size: 47px;
+    font-weight: 600;
+
+}
+
+#navbar-part .box .content {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#navbar-part .box .content input {
+    height: 100px;
+    width: 70%;
+    border: 0;
+    border-bottom: 2px solid #F04336;
+}
+
+#navbar-part .box .content input::placeholder {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #edece6;
+    text-align: center;
+}
+
+#navbar-part .box .content i {
+    font-size: 30px;
+    color: #F04336;
+    position: absolute;
+    right: 400px;
+    bottom: 32px;
+}
+
+
+#navbar-part .btn-close:focus {
+    opacity: 0;
+}
+
+#navbar-part .cross {
+    border: 0;
+    font-size: 30px;
+    color: #F04336;
+    background: transparent;
+    position: absolute;
+    top: 25px;
+    right: 70px;
+}
+
+
+
+/* =================================================
+                navbar part end
+==================================================== */
+
+
+/* ================================================
+            banner part start
+=================================================== */
+
+#banner-part {
+    position: relative;
+    z-index: 1;
+}
+
+#banner-part::after {
+    width: 100%;
+    height: 58px;
+    background: url(../images/header_shape.png);
+    top: -34px;
+    left: 0;
+    position: absolute;
+    content: '';
+    z-index:333;
+}
+
+#banner-part img {
+    width: 100%;
+}
+
+#banner-part .banner {
+    background: url(../images/banner1.jpg) no-repeat center;
+    background-size: cover;
+    padding: 400px 0;
+
+
+
+
+}
+
+#banner-part .banner2 {
+    background: url(../images/banner2.jpg) no-repeat center;
+    background-size: cover;
+    padding: 400px 0;
+
+
+
+}
+
+#banner-part .text {
+    position: relative;
+}
+
+#banner-part .text h1 {
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: 70px;
+    padding-right: 520px;
+    position: absolute;
+    left: 0px;
+    top: -90px;
+    transition: .4s;
+}
+
+#banner-part .slick-active h1 {
+    animation: left 1s;
+
+}
+
+@keyframes left {
+    from {
+        left: 140px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+
+#banner-part .text h1 span {
+    background: #F04336;
+    padding: 0 30px;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 11% 100%);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+#banner-part .text p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 20px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 568px;
+}
+
+#banner-part .slick-active p {
+    animation: left 1s;
+
+}
+
+
+
+@keyframes left {
+    from {
+        left: 140px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+
+#banner-part .slick-active p {
+    animation: left 1s;
+}
+
+
+
+ #banner-part .btn {
+    padding: 12px 20px;
+    width: 140px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #F04336;
+    outline: none;
+    color:#fff;
+    cursor: pointer;
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: 1; 
+    border: 0;
+    position: relative;
+    left: 0px;
+    bottom: -277px;
+
+}
+
+#banner-part .btn:hover {
+    color: #fff !important;
+
+}
+
+
+#banner-part .btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #0A303A;
+     z-index: -3; 
+    border-radius: 50% 50% 0 0;
+    transition: all 0.5s;
+
+}
+
+
+#banner-part .btn:hover::before{
+    height: 190%;
+}
+
+#banner-part .slick-active .btn {
+    animation: left 1s;
+
+}
+
+@keyframes left {
+    from {
+        left: 140px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+
+
+
+
+#banner-part .animation-boro {
+    position: relative;
+}
+
+#banner-part .animation-boro img {
+    width: 3%;
+    position: absolute;
+    top: -160px;
+    left: 620px;
+    animation: boro .7s infinite alternate;
+}
+
+@keyframes boro {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(30deg);
+    }
+}
+
+
+#banner-part .choto-anim {
+    position: relative;
+}
+
+#banner-part .mostafiz {
+    width: 3%;
+    position: absolute;
+    top: 194px;
+    left: 599px;
+    animation: choto 1s infinite alternate;
+}
+
+
+@keyframes choto {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(40deg);
+    }
+}
+
+
+/* ================================================
+            banner part end
+=================================================== */
+
+/* ================================================
+                find part start
+=================================================== */
+#find-part {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    left: 0;
+    bottom: 40px;
+    z-index: 33;
+}
+
+#find-part .box {
+    width: 100%;
+    height: 150px;
+    background: #F04336;
+    border-radius: 20px;
+}
+
+#find-part .first {
+    background: #0A303A;
+    z-index: 2;
+    clip-path: polygon(0% 0%, 72% 0, 100% 50%, 72% 100%, 0% 100%);
+    border-radius: 20px;
+
+
+}
+
+#find-part .item h3 {
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    padding-left: 20px;
+    border-right: 2px solid red;
+}
+
+#find-part .kire h3 {
+    border-right: 2px solid transparent;
+    border: 0;
+}
+
+#find-part .last {
+    background: #0A303A;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+#find-part .last .btn {
+    color: #ffff;
+
+
+}
+
+#find-part .last h3 {
+    border-right: 0;
+}
+
+#find-part .item i {
+    font-size: 20px;
+}
+
+/* ================================================
+                find part end
+=================================================== */
+
+
+/* ================================================
+                choose part start 
+=================================================== */
+#choose-part {
+    background: url(../images/counter_bg.jpg ) no-repeat center;
+    background-size: cover;
+    padding: 200px 0;
+    margin-top: -150px;
+}
+
+#choose-part h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: #F04336 !important;
+    text-align: center !important;
+}
+
+#choose-part h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 42px;
+    font-weight: 900;
+    color: #0A303A;
+    padding-right: 9px;
+    width: 573px;
+    text-align: center;
+    margin-left: 373px;
+}
+
+#choose-part .counter .item {
+    width: 100%;
+    padding: 50px 0px;
+    background: #ffff;
+    border-radius: 10px;
+    margin-top: 50px;
+    position: relative;
+}
+
+
+#choose-part .text h2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#choose-part .tasnim {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: #0A303A !important;
+
+}
+
+
+
+
+/* ================================================
+                choose part start 
+=================================================== */
+
+/* ================================================
+                adoption -part start 
+=================================================== */
+#adoption-part {
+    width: 100%;
+
+
+
+}
+
+#adoption-part .left {
+    position: relative;
+    margin-top: -100px;
+}
+
+#adoption-part h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: #0A303A;
+    padding-right: 187px;
+    line-height: 48px;
+    width: 100%;
+    margin-top: 149px;
+}
+
+#adoption-part h2 span {
+    color: #F04336;
+}
+
+#adoption-part p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #8A8989;
+    padding-right: 160px;
+
+}
+
+
+
+#adoption-part .btn {
+    padding: 12px 20px;
+    width: 140px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #F04336;
+    outline: none;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: 2;
+    border: 0;
+    position: absolute;
+    left: 0px;
+    bottom: -104px;
+}
+
+#adoption-part .btn:hover {
+    color: #fff;
+
+}
+
+#adoption-part .btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #0A303A;
+    z-index: -1;
+    border-radius: 50% 50% 0 0;
+    transition: all 0.5s;
+
+}
+
+#adoption-part .btn:hover::before {
+    height: 190%;
+}
+
+#adoption-part .right .img img {
+    width: 100%;
+
+}
+
+#adoption-part .right .img {
+    position: relative;
+    top: -65px;
+    right: 0;
+}
+
+#adoption-part .right .img::after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/adoption_mask.png) no-repeat center;
+    background-size: cover;
+    content: '';
+    mix-blend-mode: screen;
+}
+
+
+/* ================================================
+                adoption -part end 
+=================================================== */
+
+/* ================================================
+           popular part start 
+=================================================== */
+
+#popular-part {
+    width: 100%;
+    padding: 100px 0;
+    position: relative;
+
+
+}
+
+#popular-part h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: #F04336;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 100px;
+}
+
+#popular-part h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 42px;
+    font-weight: 900;
+    color: #0A303A;
+    text-align: center;
+
+}
+
+
+#popular-part .choto-anim {
+    position: relative;
+}
+
+#popular-part .mostafiz {
+    width: 3%;
+    position: absolute;
+    top: 57px;
+    left: 638px;
+    animation: choto 1s infinite alternate;
+
+    color: red;
+
+}
+
+
+@keyframes choto {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(40deg);
+    }
+}
+
+#popular-part .text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #8A8989;
+    text-align: center;
+    line-height: 30px;
+    padding: 0 290px;
+    margin-bottom: 60px;
+}
+
+#popular-part .left .popular-slider .item {
+    width: 100%;
+    margin-right: 20px;
+    position: relative;
+}
+
+#popular-part .left .popular-slider .item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#popular-part .left .popular-slider .item a {
+    display: inline-block;
+    padding: 17px 66px;
+    background: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    color: #F04336;
+    clip-path: polygon(0 0, 100% 0, 93% 100%, 8% 100%);
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 8px;
+    width: 80%;
+}
+
+#popular-part .next {
+    display: none !important;
+}
+
+
+#popular-part .prev {
+    width: 48px;
+    height: 44px;
+    background: url(../images/arrow_bg.png);
+    border: 0;
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    transform: translateX(-50%);
+    transition: .4s;
+}
+
+#popular-part .prev img {
+    width: 100%;
+    transform: rotate(175deg);
+    position: relative;
+    top: 0;
+    left: 16px;
+}
+
+#popular-part .prev:hover img {
+    filter: brightness(100);
+}
+
+#popular-part .right .card {
+    width: 100%;
+    background: url(../images/p1.jpg) no-repeat center;
+    background-size: cover;
+    height: 435px;
+    position: relative;
+}
+
+#popular-part .right .card h4 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    margin-left: 20px;
+}
+
+#popular-part .right .card h4::after {
+    width: 4px;
+    height: 29px;
+    background: #fff;
+    position: absolute;
+    top: -5px;
+    left: -10px;
+    content: '';
+}
+
+
+#popular-part .right .card .text {
+    padding: 50px;
+}
+
+#popular-part .right .card h5 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: #fff;
+    margin: 20px 0;
+}
+
+#popular-part .right .card h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 25px;
+}
+
+#popular-part .right .card .btn {
+    padding: 17px 40px;
+    width: 223px;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #ffff;
+    outline: none;
+    color: #F04336;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: 2;
+    border: 0;
+    position: absolute;
+    left: 57px;
+    bottom: 23px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#popular-part .right .card .btn:hover {
+    color: #fff;
+
+}
+
+#popular-part .right .card .btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #0A303A;
+    z-index: -1;
+    border-radius: 50% 50% 0 0;
+    transition: all 0.5s;
+
+}
+
+#popular-part .right .card .btn:hover::before {
+    height: 190%;
+}
+
+/* ================================================
+            popular part end
+=================================================== */
+
+/* ================================================
+            faq part start 
+=================================================== */
+#faq-part {
+    width: 100%;
+    padding: 100px 0;
+    background: #D5E6EB;
+    position: relative;
+}
+
+#faq-part::after {
+    width: 100%;
+    height: 24px;
+    background: url(../images/faq\ shape.png);
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+}
+
+#faq-part .img1 img {
+    width: 100%;
+}
+
+#faq-part .left {
+    position: relative;
+}
+
+#faq-part .box {
+    width: 434px;
+    height: 391px;
+    position: absolute;
+    top: 197px;
+    left: 52px;
+    border-radius: 70px;
+    overflow: hidden;
+
+}
+
+#faq-part .box img {
+    width: 100%;
+    height: 101%;
+}
+
+#faq-part .my-video-links {
+    width: 105px;
+    height: 107px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 208px;
+    right: 30px;
+}
+
+
+#faq-part .right .faq{
+    margin-top: 165px;
+}
+
+
+
+#faq-part .right .faq .accordion-button::after{
+    display: none;
+}
+
+#faq-part .right .faq .accordion-button{
+    border: 0;
+}
+
+#faq-part .right .faq .accordion-button h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: #0A303A;
+    
+}
+
+#faq-part .right .faq .accordion-item{
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 0;
+}
+
+#faq-part .right .faq .accordion-button{
+    border-bottom: 1px solid #D4D4D4;
+}
+
+#faq-part .right .faq .collapsed{
+    border-bottom: 2px solid transparent;
+}
+
+
+
+#faq-part .right .faq .accordion-button:not(.collapsed){
+    background: 0;
+}
+
+
+#faq-part .right .faq .accordion-body p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color:#676666;
+}
+
+#faq-part .right .faq .arrow{
+    width: 40px;
+    height: 40px;
+    background: #F04336;
+    border-radius: 30% 70% 66% 34% / 30% 31% 69% 70% ;
+    margin-left: auto;
+}
+
+#faq-part .right .faq .arrow span{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* #faq-part .right .faq  .arrow .plus{
+    display: block;
+    
+} */
+
+#faq-part .right .faq .collapsed .arrow .minus{
+    visibility: hidden;
+    opacity: 0;
+    display: none !important;
+}
+
+#faq-part .right .faq .accordion-button  .arrow .minus{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    color: #fff;
+}
+
+#faq-part .right .faq   .accordion-button .arrow .plus{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+
+#faq-part .right .faq .collapsed .arrow .plus{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    color: #F04336;
+   
+
+}
+
+#faq-part .right .faq .collapsed .arrow{
+    background: #D5E6EB;
+
+}
+
+#faq-part .right .faq .accordion-button:focus {
+
+    box-shadow: var(--bs-accordion-btn-focus-box-shadow)transparent;
+}
+
+
+
+
+
+
+
+
+/* ================================================
+            faq part end
+=================================================== */
+
+/* ===============================================
+            gellary part start 
+================================================== */
+#gellary-part {
+    width: 100%;
+    padding: 50px 0;
+    background: #181A21;
+    position: relative;
+}
+
+#gellary-part::after {
+    width: 100%;
+    height: 25px;
+    background: url(../images/faq_bg_shape02.png);
+    position: absolute;
+    top: -23px;
+    left: 0;
+    content: '';
+    z-index: 2;
+}
+
+#gellary-part::before {
+    width: 82px;
+    height: 116px;
+    background: url(../images/dog-shape.png);
+    position: absolute;
+    top: -127px;
+    right: 127px;
+    content: '';
+}
+
+
+
+
+#gellary-part .item {
+    width: 10%;
+    margin: 0 10px;
+    margin-top: 50px;
+}
+
+#gellary-part .item img {
+    margin: 0 auto;
+}
+
+
+
+/* ===============================================
+            gellary part end
+ ================================================= */
+
+/* ==============================================
+            meet part start 
+ ================================================= */
+#meet-part {
+    width: 100%;
+    padding: 100px 0;
+    position: relative;
+
+}
+
+
+#meet-part h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: #F04336;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+#meet-part h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 42px;
+    font-weight: 900;
+    color: #0A303A;
+    text-align: center;
+
+}
+
+
+#meet-part .choto-anim {
+    position: relative;
+}
+
+#meet-part .mostafiz {
+    width: 3%;
+    position: absolute;
+    top: -18px;
+    left: 638px;
+    animation: choto 1s infinite alternate;
+    color: red;
+}
+
+
+@keyframes choto {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(40deg);
+    }
+}
+
+#meet-part .text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #8A8989;
+    text-align: center;
+    line-height: 30px;
+    padding: 0 290px;
+    margin-bottom: 60px;
+}
+
+#meet-part .item {
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 120px;
+}
+
+#meet-part .item img {
+    width: 100%;
+
+}
+
+#meet-part .item .overlay {
+    width: 0%;
+    height: 100%;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    transition: .4s;
+    opacity: 0;
+}
+
+#meet-part .item:hover .overlay {
+    background: rgba(184, 175, 175, 0.419);
+    opacity: 1;
+    width: 100%;
+}
+
+
+
+
+#meet-part .overlay .btn {
+    padding: 17px 40px;
+    width: 223px;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #F04336;
+    outline: none;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: 2;
+    border: 0;
+    position: absolute;
+    left: 100px;
+    bottom: -39px;
+    bottom: 150px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#meet-part .overlay .btn:hover {
+    color: #fff;
+
+}
+
+#meet-part .overlay .btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #0A303A;
+    z-index: -1;
+    border-radius: 50% 50% 0 0;
+    transition: all 0.5s;
+
+}
+
+#meet-part .overlay .btn:hover::before {
+    height: 190%;
+}
+
+#meet-part .box {
+    width: 300px;
+    padding: 30px 0;
+    background: #fff;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#meet-part .box {
+    width: 300px;
+    padding: 30px 0;
+    background: #fff;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -102px;
+    left: 60px;
+}
+
+#meet-part .box h3:hover {
+    color: #F04336;
+    cursor: pointer;
+}
+
+#meet-part .box p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #8A8989;
+
+}
+
+#meet-part .box p i {
+    margin: 0 3px;
+}
+
+#meet-part .box h3::after {
+    position: absolute;
+    bottom: 93px;
+    left: 11px;
+    width: 273px;
+    height: 2px;
+    background: rgb(231, 219, 219);
+    content: '';
+}
+
+#meet-part .box .head {
+    padding: 20px;
+}
+
+#meet-part .box .head .star {
+    color: #F39C10;
+}
+
+#meet-part .box span {
+    text-align: right;
+    padding-left: 41px;
+}
+
+#meet-part .box .bottom {
+    text-align: right;
+    margin-top: -34px;
+}
+
+
+/* ==============================================
+            meet part end 
+ ================================================= */
+
+/* ==============================================
+                testimonial part start 
+ ================================================= */
+
+#testimonial-part {
+    width: 100%;
+    padding: 100px 0;
+    background: url(../images/testimonial_bg.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+
+
+}
+
+#testimonial-part::after {
+    width: 100%;
+    height: 24px;
+    background: url(../images/mostafiz.png);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    content: '';
+
+}
+
+#testimonial-part::before {
+    width: 100%;
+    height: 24px;
+    background: url(../images//testi_bg_shape02.png);
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    content: '';
+}
+
+
+#testimonial-part .text {
+    padding-top: 60px;
+}
+
+#testimonial-part h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: #F04336;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+#testimonial-part h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 42px;
+    font-weight: 900;
+    color: #0A303A;
+    text-align: center;
+
+}
+
+
+#testimonial-part .choto-anim {
+    position: relative;
+}
+
+#testimonial-part .mostafiz {
+    width: 3%;
+    position: absolute;
+    top: -18px;
+    left: 638px;
+    animation: choto 1s infinite alternate;
+    color: red;
+}
+
+
+@keyframes choto {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(40deg);
+    }
+}
+
+#testimonial-part .text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #8A8989;
+    text-align: center;
+    line-height: 30px;
+    padding: 0 290px;
+    margin-bottom: 60px;
+}
+
+#testimonial-part .testi-slider {
+    width: 100%;
+}
+
+#testimonial-part .testi-slider .item {
+
+    height: 250px;
+    background: #fff;
+    margin: 0 10px;
+    clip-path: polygon(0 0, 100% 0, 93% 100%, 8% 100%);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    position: relative;
+}
+
+#testimonial-part .testi-slider .item .box {
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 8px solid #dccece;
+}
+
+#testimonial-part .testi-slider .item .box img {
+    width: 100%;
+}
+
+#testimonial-part .testi-slider .item h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #CECDCD;
+    line-height: 28px;
+    padding: 0 38px;
+    position: absolute;
+    top: 25px;
+    left: 136px;
+}
+
+#testimonial-part .testi-slider .item h4 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: #0A303A;
+    margin-top: 31px;
+    margin-left: 168px;
+}
+
+#testimonial-part .testi-slider .item p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #8A8989;
+    margin-top: 10px;
+    margin-left: 168px;
+}
+
+#testimonial-part .testi-slider .item i {
+    font-size: 80px;
+    position: absolute;
+    right: 87px;
+    bottom: 32px;
+    color: #F04336;
+}
+
+
+/* ===============================================
+            testimonial part end
+ ================================================== */
+
+/* ===============================================
+            news part start 
+ ================================================== */
+
+#news-part {
+    padding: 100px 0;
+    position: relative;
+
+}
+
+
+
+#news-part .text {
+    padding-top: 60px;
+}
+
+#news-part h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: #F04336;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+#news-part h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 42px;
+    font-weight: 900;
+    color: #0A303A;
+    text-align: center;
+
+}
+
+
+#news-part .choto-anim {
+    position: relative;
+}
+
+#news-part .mostafiz {
+    width: 3%;
+    position: absolute;
+    top: -18px;
+    left: 638px;
+    animation: choto 1s infinite alternate;
+    color: red;
+}
+
+
+@keyframes choto {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(40deg);
+    }
+}
+
+#news-part .text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #8A8989;
+    text-align: center;
+    line-height: 30px;
+    padding: 0 290px;
+    margin-bottom: 60px;
+}
+
+#news-part .item .box {
+    width: 100%;
+    overflow: hidden;
+
+
+
+}
+
+#news-part .item .box img {
+    width: 100%;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: .8s;
+}
+
+#news-part .item:hover .box img {
+    transform: scale(1.3);
+
+}
+
+#news-part .item .heading {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: #0A303A;
+    text-align: left;
+    transition: .4s;
+}
+
+#news-part .item .heading:hover {
+    color: #F04336;
+    cursor: pointer;
+}
+
+#news-part .item p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #8A8989;
+    line-height: 28px;
+    padding-right: 20px;
+}
+
+
+#news-part .item a {
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #F04336;
+    transition: .4s;
+}
+
+#news-part .item a:hover {
+    color: #0A303A;
+}
+
+/* ===============================================
+            news part end 
+ ================================================== */
+
+/* ==============================================
+            form part start 
+ ================================================= */
+
+#form-part {
+    padding: 40px 0;
+    position: relative;
+
+}
+
+#form-part .shape {
+    position: relative;
+}
+
+#form-part .dog-back {
+    position: absolute;
+    top: 50px;
+    left: -119px;
+}
+
+#form-part .dog-front {
+    position: absolute;
+    top: 50px;
+    right: -141px;
+}
+
+#form-part .bg {
+    position: relative;
+}
+
+#form-part .bg img {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 20px;
+
+}
+
+#form-part .bg h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+    position: absolute;
+    top: 71px;
+    left: 83px;
+}
+
+#form-part .bg p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    position: absolute;
+    top: 120px;
+    left: 83px;
+}
+
+#form-part input {
+    width: 500px;
+    height: 60px;
+    background: white;
+    position: absolute;
+    top: 82px;
+    left: 400px;
+    border-radius: 10px;
+    border-bottom-right-radius: 40px;
+    clip-path: polygon(0 0, 100% 0%, 96% 100%, 0% 100%);
+    border: 0;
+    padding-left: 77px;
+}
+
+#form-part input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8A8989;
+}
+
+
+#form-part .btn {
+    padding: 15px 40px;
+    width: 223px;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #fff;
+    outline: none;
+    color: #F04336;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: 2;
+    border: 0;
+    position: absolute;
+    left: 912px;
+    /* bottom: -39px; */
+    bottom: 83px;
+    font-family: 'Nunito', sans-serif;
+    text-transform: capitalize;
+    clip-path: polygon(6% 0, 100% 0%, 100% 100%, 0% 100%);
+    border-top-left-radius: 30px;
+}
+
+#form-part .btn:hover {
+    color: #fff;
+
+}
+
+#form-part .btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #0A303A;
+    z-index: -1;
+    border-radius: 50% 50% 0 0;
+    transition: all 0.5s;
+
+}
+
+#form-part .btn:hover::before {
+    height: 190%;
+}
+
+
+/* #form-part a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: green;
+    color: #CECDCD;
+    text-align: center;
+} */
+
+/* ==============================================
+            form part end
+ ================================================= */
+
+/* ===============================================
+            footer part start 
+ ================================================== */
+#footer-part {
+    width: 100%;
+    height: 500px;
+    background: url(../images/footer_bg.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+#footer-part::after {
+    width: 100%;
+    height: 24px;
+    background: url(../images/footer\ bg\ shape.png);
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: '';
+}
+
+#footer-part::before {
+    width: 8%;
+    height: 78px;
+    background: url(../images/footer_shape01.png) no-repeat;
+    position: absolute;
+    bottom: 11px;
+    left: 80px;
+    content: '';
+}
+
+#footer-part .text img {
+    margin-top: 80px;
+}
+
+#footer-part .text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #676666;
+    padding-right: 77px;
+    margin-top: 30px;
+}
+
+#footer-part .text .box {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #F04336;
+
+}
+
+#footer-part .text .box i {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#footer-part .footer-head {
+    position: relative;
+}
+
+#footer-part .footer-head .text h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: #0A303A;
+    position: absolute;
+    top: 256px;
+    left: 94px;
+    transition: .4s;
+}
+
+#footer-part .footer-head .text h2:hover {
+    color: #F04336;
+    cursor: pointer;
+}
+
+#footer-part .footer-head .text h6 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    color: #F04336;
+    position: absolute;
+    top: 292px;
+    left: 94px;
+}
+
+#footer-part .icon i {
+    font-size: 20px;
+    margin-top: 20px;
+    padding-right: 10px;
+    color: #0A303A;
+    transition: .4s;
+}
+
+#footer-part .icon i:hover {
+    color: #F04336;
+    cursor: pointer;
+}
+
+#footer-part .both {
+    margin-top: 84px;
+    position: relative;
+}
+
+#footer-part .both h4 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #0A303A;
+    padding-bottom: 20px;
+
+}
+
+#footer-part .both p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #8A8989;
+    transition: .4s;
+}
+
+#footer-part .both p:hover {
+    margin-left: 5px;
+    color: #F04336;
+    cursor: pointer;
+}
+
+#footer-part .insta img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* ===============================================
+            footer part end 
+ ================================================== */
+
+/* ==============================================
+            copyright part start
+ ================================================= */
+
+#copyright-part {
+    width: 100%;
+    padding: 50px 0;
+    background: #0A303A;
+    position: relative;
+}
+
+#copyright-part::after {
+    width: 100%;
+    height: 24px;
+    background: url(../images/copyright_shape.png);
+    position: absolute;
+    top: -23px;
+    left: 0;
+    content: '';
+
+}
+
+#copyright-part::before {
+    width: 6%;
+    height: 139px;
+    background: url(../images/footer_shape02.png) no-repeat;
+    position: absolute;
+    top: -151px;
+    right: 82px;
+    content: '';
+}
+
+#copyright-part p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+
+}
+
+#copyright-part p::after {
+    width: 4px;
+    height: 26px;
+    background: #ffff;
+    position: absolute;
+    top: -3px;
+    left: -10px;
+    content: '';
+
+}
+
+#copyright-part .flag {
+    text-align: right;
+    position: relative;
+
+}
+
+#copyright-part .flag img {
+    width: 50px;
+    height: 50px;
+    text-align: right;
+    position: absolute;
+    top: -40px;
+    right: 100px;
+}
+
+#copyright-part .btn {
+    background: transparent;
+    border: 0;
+    position: absolute;
+    top: -42px;
+    right: 0;
+}
+
+#copyright-part .dropdown-menu {
+    padding: 30px 10px;
+}
+
+#copyright-part .dropdown-menu img {
+    width: 10%;
+    margin-right: 10px;
+    /* margin-top: 10px; */
+
+}
+
+#copyright-part .dropdown-menu ul li {
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+
+
+
+/* ==============================================
+            copyright part end
+ ================================================= */
+
+
+/* ============================================================== dog list part start =========================================================== */
+
+
+/* =================================================
+            dog list banner part start 
+ ==================================================== */
+#dog-list-banner {
+    width: 100%;
+    background: url(../images/dog-list-banner.jpg)no-repeat center;
+    background-size: cover;
+    padding: 200px 0;
+    position: relative;
+}
+
+#dog-list-banner::after {
+    width: 100%;
+    height: 57px;
+    background: url(../images/header_shape.png);
+    position: absolute;
+    top: -34px;
+    left: 0;
+    content: '';
+}
+
+#dog-list-banner .text h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 36;
+    font-weight: 900;
+    color: #fff;
+    background: #F04336;
+    display: inline;
+    padding: 10px 25px;
+    clip-path: polygon(0 1%, 100% 0, 93% 100%, 7% 100%);
+    border-radius: 10px 10px 38px 38px;
+}
+
+#dog-list-banner .text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #F04336;
+    font-weight: 700;
+    margin-top: 30px;
+    position: relative;
+}
+
+#dog-list-banner .text p::after {
+    width: 3px;
+    height: 18px;
+    background: #F04336;
+    position: absolute;
+    top: 3px;
+    left: 56px;
+    content: '';
+}
+
+#dog-list-banner .text {
+    position: relative;
+}
+
+#dog-list-banner .text h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 30px;
+    position: absolute;
+    top: 50px;
+    left: 67px;
+}
+
+/* =================================================
+            dog list banner part end 
+ ==================================================== */
+
+
+/* ============================================================== shop part start ================================================================ */
+
+/* =====================================================
+                shop part start 
+ ======================================================== */
+#shop-part {
+    width: 100%;
+    padding: 100px 0;
+
+}
+
+#shop-part .left input {
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 10px;
+    border: 0;
+    background: #F5F2EB;
+
+}
+
+#shop-part .left input::placeholder {
+    padding-left: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #8A8989;
+}
+
+#shop-part .left {
+    position: relative;
+    margin-top: 50px;
+}
+
+#shop-part .left .search {
+    display: inline-block;
+    padding: 20px 24px;
+    background: #F04336;
+    border: 0;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+
+#shop-part .left i {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+
+
+}
+
+#shop-part .left h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #0A303A;
+    margin: 20px 0;
+}
+
+#shop-part .left ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#shop-part .left ul li {
+    transition: .4s;
+    position: relative;
+}
+
+#shop-part .left ul li a {
+    display: inline-block;
+    padding: 12px 40px;
+    width: 100%;
+    border: 1px solid #8A8989;
+    border-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8A8989;
+}
+
+#shop-part .left ul li:hover {
+    background: #F5F2EB;
+}
+
+#shop-part .left ul li .mam:last-child {
+    border-bottom: 1px solid #8A8989;
+}
+
+#shop-part .left ul li a .plus {
+    color: #8A8989;
+    text-align: right;
+    font-size: 15px;
+    position: absolute;
+    top: 16px;
+    right: 27px;
+    transition: .4s;
+}
+
+#shop-part .left ul li a .plus:hover {
+    color: #F04336;
+}
+
+#shop-part .left ul li .ratio {
+    border: 0;
+    transition: .4s;
+    position: relative;
+
+}
+
+#shop-part .left ul li .ratio:after {
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid #8A8989;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    content: '';
+
+}
+
+#shop-part .left ul li::last-child {
+    border-bottom: 2px solid red;
+}
+
+
+
+#shop-part .left ul li .ratio:hover {
+    background: #fff;
+    color: #F04336;
+
+}
+
+#shop-part .ui-slider-horizontal {
+    height: 10px;
+}
+
+
+
+#range-slider {
+    max-width: 50%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+#slider-range {
+    background-color: #D4D4D4;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+    background-color: #F04336;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
+    background: #fff !important;
+
+    border: 3px solid #F04336 !important;
+}
+
+.ui-slider .ui-slider-handle {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.20);
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: -7px;
+    left: 0;
+}
+
+#amount {
+    font-weight: 500;
+    width: 200px;
+    margin-left: 49px;
+    color: #8A8989;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    background: transparent;
+    text-align: left;
+}
+
+#shop-part .range input {
+    background: transparent;
+}
+
+#shop-part .range {
+    position: relative;
+}
+
+#shop-part .range h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #8A8989;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+
+#shop-part .filter {
+    position: relative;
+}
+
+#shop-part .filter a {
+    display: inline-block;
+    padding: 7px 15px;
+    background: #F5F2EB;
+    font-size: 13px;
+    color: #1e4b57;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: .4s;
+    text-transform: uppercase;
+    position: absolute;
+    top: -65px;
+    left: 235px;
+}
+
+#shop-part .filter a:hover {
+    background: #F04336;
+    color: #ffff;
+}
+
+#shop-part .img {
+    position: relative;
+}
+
+#shop-part .img img {
+    width: 100%;
+}
+
+#shop-part .img:after {
+    width: 100%;
+    height: 2px;
+    background: #CECDCD;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    content: '';
+}
+
+#shop-part .text h3 {
+    color: #0A303A;
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    padding-top: 61px;
+}
+
+#shop-part .box {
+    position: relative;
+    display: flex;
+}
+
+#shop-part .right {
+    width: 100%;
+    padding: 20px 0;
+    background: #F5F2EB;
+    border-radius: 10px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+}
+
+#shop-part .right .icon {
+    width: 80px;
+    height: 30px;
+    margin-left: 20px;
+
+
+
+}
+
+#shop-part .right .icon i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    color: #ffff;
+    background: #F04336;
+    border: 1px solid #8A8989;
+
+}
+
+#shop-part .right .icon .second {
+    color: #F04336;
+    background: #fff;
+}
+
+#shop-part .right .item {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #8A8989;
+    position: absolute;
+    top: 25px;
+    left: 100px;
+}
+
+#shop-part .right .option select {
+    text-align: center;
+    position: absolute;
+    top: 22px;
+    left: 308px;
+    width: 48px;
+    height: 30px;
+}
+
+#shop-part .right .latest select {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #8A8989;
+    position: absolute;
+    top: 18px;
+    right: 7px;
+    width: 131px;
+    height: 35px;
+}
+
+#shop-part .right .by {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #8A8989;
+    position: absolute;
+    top: 25px;
+    right: 150px;
+}
+
+#shop-part .card {
+    width: 100%;
+    margin-top: 100px;
+    border: 0;
+}
+
+#shop-part .card img {
+    width: 100%;
+}
+
+#shop-part .card p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #8A8989;
+    margin: 20px 0;
+}
+
+#shop-part .card h4 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #0A303A;
+    transition: .4s;
+}
+
+#shop-part .card h4:hover {
+    color: #F04336;
+}
+
+#shop-part .card h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #8A8989;
+}
+
+#shop-part .card a {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: #F04336;
+    text-align: right;
+}
+
+
+/* =====================================================
+                shop part end
+ ======================================================== */
+
+
+/* =============================================================== shop details part start ========================================================= */
+
+
+/* =====================================================
+                shop details part start 
+ ======================================================== */
+
+
+#shop-details-part {
+    width: 100%;
+    padding: 100px 0;
+    background: #fff;
+}
+
+
+#shop-details-part .choto {
+    width: 125px;
+    height: 125px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+#shop-details-part .largeimg .boro {
+    border-radius: 10px;
+}
+
+#shop-details-part .choto img {
+    width: 100%;
+  
+}
+
+#shop-details-part .largeimg img {
+    width: 100%;
+
+}
+
+#shop-details-part .text h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #8A8989;
+}
+
+#shop-details-part .text h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 34px;
+    font-weight: 900;
+    color: #0A303A;
+}
+
+#shop-details-part .text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8A8989;
+}
+
+#shop-details-part .text i {
+    color: #FEBD00;
+}
+
+#shop-details-part .text .bigp {
+    padding-right: 140px;
+}
+
+#shop-details-part .text h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1e4b57;
+}
+
+#shop-details-part .text h3 span {
+    font-size: 15px;
+    color: #F04336;
+}
+
+#shop-details-part .text h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e4b57;
+    margin: 20px 0;
+}
+
+#shop-details-part .text a {
+    display: inline-block;
+    padding: 6px 20px;
+    background: #F5F2EB;
+    border-radius: 5px;
+    color: #1e4b57;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    transition: .4s;
+}
+
+#shop-details-part .text a:hover {
+    color: #fff;
+    background: #F04336;
+}
+
+#shop-details-part .text .sobuj {
+    width: 80px;
+    height: 40px;
+    background: green;
+    border-radius: 15px;
+}
+
+
+#shop-details-part .text .nil {
+    width: 80px;
+    height: 40px;
+    background: blue;
+    border-radius: 15px;
+}
+
+#shop-details-part .text .lal {
+    width: 80px;
+    height: 40px;
+    background: red;
+    border-radius: 15px;
+}
+
+#shop-details-part .count {
+    display: flex;
+
+}
+
+#shop-details-part .count .box {
+    width: 100px;
+    display: flex;
+    margin-top: 4px;
+}
+
+#shop-details-part .count .minus {
+    width: 30px;
+    text-align: center;
+    align-items: center;
+    height: 30px;
+    background: #F5F2EB;
+    border: 1px solid #8A8989;
+}
+
+#shop-details-part .count h2 {
+    border: 1px solid #8A8989;
+    height: 30px;
+    width: 74px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    background: #F5F2EB;
+    text-align: center;
+    align-items: center;
+}
+
+
+#shop-details-part .count .plus {
+    width: 30px;
+    text-align: center;
+    align-items: center;
+    height: 30px;
+    background: #F5F2EB;
+    border: 1px solid #8A8989;
+}
+
+
+
+
+#shop-details-part .cart-button .one {
+    display: inline-block;
+    padding: 8px 20px;
+    margin-left: 10px;
+    background: #fff;
+    border: 1px solid #8A8989;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+}
+
+#shop-details-part .cart-button .two {
+    display: inline-block;
+    padding: 8px 20px;
+    margin-left: 10px;
+    background: #0A303A;
+    color: #fff;
+    border: 1px solid #8A8989;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+
+}
+
+
+
+/* =====================================================
+                shop details part end 
+ ======================================================== */
+
+
+/* ====================================================
+            more details part start 
+ ======================================================= */
+#more-details-part {
+    width: 100%;
+    padding: 100px 0;
+
+}
+
+#more-details-part .nav-link {
+    background: transparent;
+}
+
+#more-details-part .nav-link {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #0A303A;
+    transition: .4s;
+    border: 0;
+
+}
+
+
+
+#more-details-part .nav-link:hover {
+    color: #F04336;
+}
+
+#more-details-part .tab-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #676666;
+    padding-right: 105px;
+    line-height: 26px;
+    margin-top: 30px;
+}
+
+#more-details-part .more img {
+    width: 100%;
+    margin-top: 30px;
+}
+
+#more-details-part .more .right h4 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #0A303A;
+    margin-top: 30px;
+}
+
+#more-details-part .more .right p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #676666;
+}
+
+#more-details-part .more .right p i {
+    padding-right: 10px;
+    font-size: 5px;
+}
+
+#more-details-part .more .review {
+    border: 1px solid #CECDCD;
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+
+
+}
+
+#more-details-part .more .review h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #1e4b57;
+    padding: 20px 40px;
+}
+
+#more-details-part .more .review p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8A8989;
+    padding: 0px 40px;
+
+}
+
+
+/* ====================================================
+            more details part end 
+ ======================================================= */
+
+/* ===================================================
+            product part start 
+ ====================================================== */
+
+#product-part {
+    width: 100%;
+    padding: 100px 0;
+}
+
+
+#product-part .text h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: #0A303A;
+    margin-bottom: 20px;
+}
+
+#product-part .product-slider .item {
+    width: 22%;
+}
+
+
+#product-part .product-slider .item .card {
+    width: 90%;
+    border: 0;
+}
+
+#product-part .product-slider .item .card img {
+    width: 100%;
+}
+
+#product-part .product-slider .item.card p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #8A8989;
+    margin: 20px 0;
+}
+
+#product-part .product-slider .item .card h4 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #0A303A;
+    transition: .4s;
+}
+
+#product-part .product-slider .item .card h4:hover {
+    color: #F04336;
+}
+
+#product-part .product-slider .item .card h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #8A8989;
+}
+
+#product-part .product-slider .item .card a {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: #F04336;
+    text-align: right;
+}
+
+/* ===================================================
+            product part end 
+ ====================================================== */
+
+/* =============================================================== shop details part end ========================================================= */
+
+
+
+/* =============================================================== adoption part start ========================================================== */
+
+/* ====================================================
+                meet adoption part start 
+======================================================= */
+#meet-adoption {
+    width: 100%;
+    background: url(../images/meet-adoption-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+#meet-adoption .text {
+    margin-top: 20px;
+}
+
+#meet-adoption .text h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: #F04336;
+    margin: 20px 0;
+}
+
+#meet-adoption .text h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: #0A303A;
+}
+
+#meet-adoption .text h1 span {
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: #F04336;
+}
+
+#meet-adoption .text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #8A8989;
+    margin: 20px 0;
+}
+
+#meet-adoption .text h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0a303a;
+    margin-top: 30px;
+}
+
+#meet-adoption .text h6 i {
+    padding-right: 10px;
+    color: #F04336;
+}
+
+#meet-adoption .item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#meet-adoption .card img {
+    width: 100%;
+}
+
+
+
+
+
+#meet-adoption .card {
+    width: 100%;
+    background: url(../images/p1.jpg) no-repeat center;
+    background-size: cover;
+    height: 467px;
+    position: relative;
+    margin-left: -30px;
+}
+
+#meet-adoption .card h4 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    margin-left: 20px;
+}
+
+#meet-adoption .card h4::after {
+    width: 4px;
+    height: 29px;
+    background: #fff;
+    position: absolute;
+    top: -5px;
+    left: -10px;
+    content: '';
+}
+
+#meet-adoption .card .text {
+    padding: 50px;
+}
+
+#meet-adoption .card h5 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: #fff;
+    margin: 20px 0;
+}
+
+#meet-adoption .card h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 25px;
+}
+
+#meet-adoption .card .btn {
+    padding: 17px 40px;
+    width: 223px;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: capitalize;
+    background-color: #ffff;
+    outline: none;
+    color: #F04336;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: 2;
+    border: 0;
+    position: absolute;
+    left: 57px;
+    bottom: 23px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#meet-adoption .card .btn:hover {
+    color: #fff;
+
+}
+
+#meet-adoption .card .btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #0A303A;
+    z-index: -1;
+    border-radius: 50% 50% 0 0;
+    transition: all 0.5s;
+
+}
+
+#meet-adoption .btn:hover::before {
+    height: 190%;
+}
+
+
+#meet-adoption .counter .item {
+    width: 100%;
+    padding: 50px 0px;
+    background: #ffff;
+    border-radius: 10px;
+    margin-top: 50px;
+    position: relative;
+}
+
+#meet-adoption .counter .kire {
+    font-size: 100px;
+    color: rebeccapurple;
+    z-index: 3;
+}
+
+#meet-adoption .tasnim {
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: #0A303A !important;
+}
+
+/* ====================================================
+                meet adoption part end 
+======================================================= */
+
+
+/* =====================================================
+            meet animal part start 
+======================================================== */
+#meet-animal {
+    width: 100%;
+    padding: 100px 0;
+
+}
+
+
+#meet-animal h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: #F04336;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+#meet-animal h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 42px;
+    font-weight: 900;
+    color: #0A303A;
+    text-align: center;
+
+}
+
+
+#meet-animal .choto-anim {
+    position: relative;
+}
+
+#meet-animal .mostafiz {
+    width: 3%;
+    position: absolute;
+    top: -18px;
+    left: 638px;
+    animation: choto 1s infinite alternate;
+    color: red;
+}
+
+
+@keyframes choto {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(40deg);
+    }
+}
+
+#meet-animal .text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #8A8989;
+    text-align: center;
+    line-height: 30px;
+    padding: 0 290px;
+    margin-bottom: 60px;
+}
+
+#meet-animal .item img {
+    width: 100%;
+    padding: 0 10px;
+}
+
+#meet-animal .item p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #8A8989;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#meet-animal .item h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: #0A303A;
+    transition: .4s;
+    text-align: center;
+
+}
+
+#meet-animal .item h2:hover {
+    color: #F04336;
+}
+
+#meet-animal .item a {
+    display: inline-block;
+    color: #F04336;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 0 auto;
+    text-transform: capitalize;
+    margin-left: 108px;
+}
+
+#meet-animal .item .middle {
+    padding: 0 20px;
+}
+
+#meet-animal .item {
+    position: relative;
+}
+
+#meet-animal .item .status {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #F04336;
+    position: absolute;
+    top: 11px;
+    right: 30px;
+}
+
+#meet-animal .item .status p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    margin: 14px 0;
+
+}
+
+/* =====================================================
+            meet animal part end
+======================================================== */
+
+
+/* =====================================================
+            happy part start 
+======================================================== */
+#happy-part {
+    width: 100%;
+    padding: 100px 0;
+
+}
+
+
+
+#happy-part .text {
+    margin-top: 20px;
+}
+
+#happy-part .text h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: #F04336;
+    margin: 20px 0;
+}
+
+#happy-part .text h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: #0A303A;
+    /* padding: 0 61px; */
+    padding-right: 130px;
+}
+
+#happy-part .text h1 span {
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: #F04336;
+}
+
+#happy-part .text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #8A8989;
+    margin: 20px 0;
+    padding-right: 205px;
+}
+
+#happy-part .text h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0a303a;
+    margin-top: 30px;
+}
+
+#happy-part .text h6 i {
+    padding-right: 10px;
+    color: #F04336;
+}
+
+#happy-part .right .item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#happy-part .slick-dots {
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+#happy-part .slick-dots li button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    border: 0;
+    margin: 10px 0;
+    position: relative;
+
+}
+
+#happy-part .slick-dots li button::after {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #fff;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    content: '';
+    border-radius: 50%;
+    opacity: 0;
+    transition: .4s;
+
+}
+
+
+#happy-part .slick-dots .slick-active button::after{
+    opacity: 1;
+}
+
+/* =====================================================
+            happy part end 
+======================================================== */
+/* =============================================================== adoption part end  ========================================================== */
+
+ /* ============================================================= breeder part start =========================================================== */
+ /* =================================================
+            breeder part start 
+ ==================================================== */
+ #breeder-part{
+    width: 100%;
+    padding: 100px 0;
+    background: url(../images/breeder-bg.jpg);
+ }
+
+ #breeder-part .details .left{
+    position: relative;
+ }
+
+ #breeder-part .details .left .box {
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    /* padding: 93px 20px; */
+    padding-bottom: 107px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+ #breeder-part .details .left .box h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: #0A303A;
+    padding: 20px 0;
+ }
+
+ #breeder-part .details .left .box p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #676666;
+ }
+
+ #breeder-part .details .left .box img{
+    width: 100%;
+ }
+
+ #breeder-part .details .left .box .title{
+    border-bottom: 1px solid #d8d8da;
+ }
+
+
+ #breeder-part .details .left .box .more h5{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #0A303A;
+ }
+
+
+ #breeder-part .details .left .box .more p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #F04336;
+ }
+
+
+ #breeder-part .box .btn {
+    padding: 17px 40px;
+    width: 223px;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: capitalize;
+    background-color: #F04336;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: 2;
+    border: 0;
+    position: absolute;
+    left: auto;
+    bottom: 23px;
+    font-family: 'Nunito', sans-serif;
+    /* margin-top: 30px; */
+}
+
+#breeder-part .box .btn:hover {
+    color: #fff;
+
+}
+
+#breeder-part .box .btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #0A303A;
+    z-index: -1;
+    border-radius: 50% 50% 0 0;
+    transition: all 0.5s;
+
+}
+
+#breeder-part .box .btn:hover::before {
+    height: 190%;
+}
+
+
+#breeder-part .details .right .box{
+    width: 100%;
+    height: 600px;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    padding: 20px;
+}
+
+#breeder-part .details .right .box h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: #0A303A;
+}
+
+#breeder-part .details .right .box input{
+    height: 45px;
+    width: 350px;
+    margin: 5px 0;
+    padding-left: 10px;
+}
+
+#breeder-part .details .right .box input::placeholder{
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #818080;
+}
+
+
+#breeder-part .right .box .btn {
+    padding: 23px 35px;
+    width: 350px;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: capitalize;
+    background-color: #F04336;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: 2;
+    border: 0;
+    position: absolute;
+    left: 20px;
+    bottom: 54px;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+#breeder-part .right .box .btn:hover {
+    color: #fff;
+
+}
+
+#breeder-part .right .box .btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #0A303A;
+    z-index: -1;
+    border-radius: 50% 50% 0 0;
+    transition: all 0.5s;
+
+}
+
+#breeder-part .right .box .btn:hover::before {
+    height: 190%;
+}
+
+
+#breeder-part .right .subscribe{
+    width: 100%;
+    height: 550px;
+    background: #143556;
+    border-radius: 20px;
+    margin-top: 50px;
+    position: relative;
+}
+
+#breeder-part .right .subscribe img {
+    max-width: 100%;
+    margin: 50px 91px;
+}
+
+#breeder-part .right .subscribe h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    color: #ffff;
+    text-align: center;
+}
+
+#breeder-part .right .subscribe p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+
+#breeder-part .right .subscribe input {
+    width: 350px;
+    height: 67px;
+    background: #fff;
+    border-radius: 10px;
+    border: 0;
+    margin-left: 30px;
+    padding-left: 111px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+#breeder-part .subscribe .btn {
+    padding: 23px 35px;
+    width: 350px;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: capitalize;
+    background-color: #F04336;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: 2;
+    border: 0;
+    position: absolute;
+    left: 34px;
+    bottom: 101px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#breeder-part .subscribe .btn:hover {
+    color: #fff;
+
+}
+
+#breeder-part .subscribe .btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #0A303A;
+    z-index: -1;
+    border-radius: 50% 50% 0 0;
+    transition: all 0.5s;
+
+}
+
+#breeder-part .subscribe .btn:hover::before {
+    height: 190%;
+}
+
+
+  /* =================================================
+            breeder part end
+ ==================================================== */
+ /* ============================================================= breeder part end   =========================================================== */
+
+
+ /* ============================================================= blog part start ============================================================== */
+ /* ==================================================
+            blog part start 
+ ===================================================== */
+ #blog-part{
+    width: 100%;
+    padding: 100px 0;
+ }
+
+ #blog-part .left img{
+    width: 100%;
+    border-radius: 10px;
+    margin: 30px 0;
+ }
+
+ #blog-part .left h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: #0A303A;
+    transition: .4s;
+    padding: 10px 0;
+ }
+
+ #blog-part .left h1:hover{
+    color: #F04336;
+ }
+
+ #blog-part .left p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #818080;
+    padding-right: 56px;
+}
+
+#blog-part .left a{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #F04336;
+}
+
+#blog-part .right .search {
+    width: 100%;
+    height: 200px;
+    background: #F4F2EB;
+    border-radius: 10px;
+    position: relative;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+#blog-part .right .search h4 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #0A303A;
+    position: relative;
+    padding: 20px 0px;
+}
+
+#blog-part .right .search h4::after {
+    position: absolute;
+    top: 19px;
+    left: 63px;
+    width: 5px;
+    height: 21px;
+    background: #F04336;
+    border-radius: 6px;
+    content: '';
+}
+
+#blog-part .right .search h4::before {
+    position: absolute;
+    top: 24px;
+    left: 74px;
+    width: 5px;
+    height: 22px;
+    background: #F04336;
+    border-radius: 5px;
+    content: '';
+}
+
+#blog-part .right .search input {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    border: 0;
+    padding-left: 20px;
+}
+
+#blog-part .right .search .search-icon {
+    width: 66px;
+    height: 60px;
+    background: #F04336;
+    border-radius: 10px;
+    position: absolute;
+    top: 100px;
+    left: 318px;
+}
+
+#blog-part .right .search .search-icon i{
+    width: 66px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+#blog-part .right .category {
+    width: 100%;
+    height: 400px;
+    background: #F4F2EB;
+    border-radius: 10px;
+    margin-top: 20px;
+    position: relative;
+    padding: 30px;
+}
+
+
+#blog-part .right .category h4 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #0A303A;
+    position: relative;
+    padding: 20px 0px;
+}
+
+#blog-part .right .category h4::after {
+    position: absolute;
+    top: 19px;
+    left: 100px;
+    width: 5px;
+    height: 21px;
+    background: #F04336;
+    border-radius: 6px;
+    content: '';
+}
+
+#blog-part .right .category h4::before {
+    position: absolute;
+    top: 24px;
+    left: 110px;
+    width: 5px;
+    height: 22px;
+    background: #F04336;
+    border-radius: 5px;
+    content: '';
+}
+
+#blog-part .right .category a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8A8989;
+    width: 200px;
+    text-align: center;
+    padding: 20px 0;
+    transition: .4s;
+    
+}
+
+#blog-part .right .category ul li{
+    border-bottom: 2px dotted #CECDCD;
+    margin: 40px 0;
+ 
+}
+
+#blog-part .right .category a:hover{
+    color: #F04336;
+}
+
+#blog-part .right .recent{
+    width: 100%;
+    height: 730px;
+    background: #F4F2EB;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+
+#blog-part .right .recent h4 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #0A303A;
+    position: relative;
+    padding: 20px 0px;
+}
+
+#blog-part .right .recent h4::after {
+    position: absolute;
+    top: 19px;
+    left: 110px;
+    width: 5px;
+    height: 21px;
+    background: #F04336;
+    border-radius: 6px;
+    content: '';
+}
+
+#blog-part .right .recent h4::before {
+    position: absolute;
+    top: 24px;
+    left: 120px;
+    width: 5px;
+    height: 22px;
+    background: #F04336;
+    border-radius: 5px;
+    content: '';
+}
+
+#blog-part .right .recent img{
+    border-radius: 10px;
+}
+
+#blog-part .right .recent h5 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #0A303A;
+    transition: .4s;
+    padding-right: 178px;
+    margin: 20px 0;
+    width: 412px;
+}
+
+#blog-part .right .recent h5:hover{
+    color: #F04336;
+}
+
+#blog-part .right  p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #818080;
+}
+
+
+#blog-part .right  .subscribe{
+    width: 100%;
+    height: 550px;
+    background: #143556;
+    border-radius: 20px;
+    margin-top: 50px;
+    position: relative;
+}
+
+#blog-part .right  .subscribe img {
+    max-width: 100%;
+    margin: 50px 91px;
+}
+
+#blog-part .right  .subscribe h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    color: #ffff;
+    text-align: center;
+}
+
+#blog-part .right  .subscribe p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+
+#blog-part .right  .subscribe input {
+    width: 350px;
+    height: 67px;
+    background: #fff;
+    border-radius: 10px;
+    border: 0;
+    margin-left: 30px;
+    padding-left: 111px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#blog-part .right  .subscribe .btn {
+    padding: 23px 35px;
+    width: 350px;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: capitalize;
+    background-color: #F04336;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: 2;
+    border: 0;
+    position: absolute;
+    left: 34px;
+    bottom: 101px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#blog-part .right .subscribe .btn:hover {
+    color: #fff;
+
+}
+
+#blog-part .right  .subscribe .btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #0A303A;
+    z-index: -1;
+    border-radius: 50% 50% 0 0;
+    transition: all 0.5s;
+
+}
+
+#blog-part .right .subscribe .btn:hover::before {
+    height: 190%;
+}
+
+
+
+  /* ==================================================
+            blog part end  
+ ===================================================== */
+ /* ============================================================= blog part end   ============================================================== */
+
+
+
+
+
+/* ============================================================== contact part start =========================================================== */
+
+ /* ==================================================
+            contact part start 
+ ===================================================== */
+ #contact-part{
+    width: 100%;
+    padding: 100px 0;
+ }
+
+ #contact-part .left h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #0a303a;
+ }
+
+ #contact-part .left h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: #0A303A;
+ }
+
+ #contact-part .left p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #676666;
+    padding-right: 354px;
+}
+
+#contact-part .left h6{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #0a303a;
+}
+
+#contact-part .left input {
+    width: 95%;
+    height: 60px;
+    background: #F5F2EB;
+    border: 0;
+    margin: 20px 0;
+    padding-left: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+#contact-part .left textarea {
+    width: 95%;
+    height: 142px;
+    background: #F5F2EB;
+    border: 0;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+
+#contact-part .left .tik{
+    position: relative;
+}
+
+#contact-part .left .correct {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -15px;
+    left: 0;
+}
+
+#contact-part .left .check{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #676666;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+
+#contact-part .left .btn {
+    padding: 23px 14px;
+    width: 234px;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: capitalize;
+    background-color: #F04336;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: 2;
+    border: 0;
+    position: absolute;
+    left: 0;
+    bottom: -102px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#contact-part .left .btn:hover {
+    color: #fff;
+
+}
+
+#contact-part .left .btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #0A303A;
+    z-index: -1;
+    border-radius: 50% 50% 0 0;
+    transition: all 0.5s;
+
+}
+
+#contact-part .left .btn:hover::before {
+    height: 190%;
+}
+
+#contact-part .left{
+    position: relative;
+}
+
+#contact-part .right{
+    width: 100%;
+    height: 700px;
+    background: #F5F2EB;
+    border-radius: 5px;
+    padding: 30px;
+ 
+}
+
+#contact-part .right .semibox{
+    position: relative;
+}
+
+#contact-part .right .semibox img{
+    margin-left: 30px;
+}
+
+#contact-part .right .box{
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 20px 0;
+
+}
+
+#contact-part .right .box i{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #F04336;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+#contact-part .right p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #696969;
+
+}
+
+#contact-part .right .p1 {
+    position: absolute;
+    top: 312px;
+    left: 68px;
+}
+
+#contact-part .right .p2 {
+    position: absolute;
+    top: 390px;
+    left: 68px;
+}
+
+#contact-part .right .p3 {
+    position: absolute;
+    top: 462px;
+    left: 68px;
+}
+
+#contact-part .right .icon-box{
+    display: flex;
+}
+
+#contact-part .right .icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+#contact-part .right .icon-box .i1{
+    background: #385594;
+}
+
+#contact-part .right .icon-box .i2{
+    background: #4EABEE;
+}
+
+#contact-part .right .icon-box .i3{
+    background: #1976D2;
+}
+
+#contact-part .right .icon-box i{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+}
+  /* ==================================================
+            contact part start 
+ ===================================================== */
+
+/* ============================================================== contact part  end  =========================================================== */
+
+
